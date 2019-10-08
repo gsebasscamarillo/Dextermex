@@ -7,7 +7,7 @@ class Segproy (models.Model):
     empresa = models.CharField(max_length=100)
     proyecto = models.CharField(max_length=200)
     estatus = models.CharField(max_length=200)
-    avance = models.IntegerField(max_length=3)
+    avance = models.IntegerField(default=0)
     entrega = models.CharField(max_length=20)
 
     def __str__(self):
