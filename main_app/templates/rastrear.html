@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rastreo</title>
+  </head>
+  <body>
+        <form action="." method="POST">
+            {% crsf_token %}
+            <table>
+                { form }
+            </table>
+        </form>
+  </body>
+</html>
