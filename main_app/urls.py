@@ -4,6 +4,6 @@ from django.conf import settings
 from . import views
 
 urlpatterns = [
-    url(r'', views.index),
-    url(r'^()/$', views.rastrear, name = 'rastrear'),
+    url(r'^$', views.index),
+    url(r'^rastrear/$', views.rastrear, name = 'rastrear'),
 ]

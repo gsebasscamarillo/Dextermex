@@ -4,11 +4,14 @@
     <title>Rastreo</title>
   </head>
   <body>
-        <form action="." method="POST">
-            {% crsf_token %}
-            <table>
-                { form }
-            </table>
-        </form>
+    <h1>Resultados</h1>
+    <ul>
+        {{ proyecto.rastreo }}
+        {{ proyecto.empresa }}
+        {{ proyecto.proyecto }}
+        {{ proyecto.estatus }}
+        {{ proyecto.avance }}
+        {{ proyecto.entrega }}
+    </ul>
   </body>
 </html>
