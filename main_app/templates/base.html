@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dextermex</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}" />
+    <div class="container">
+        <img src="{% static 'Logo_Dextermex.jpg' %}" width="150px" align="left">
+    </div> 
+  </head>
+  <br>
+  <body class="text-center">
+    <main role="main">
+            {% block content %}
+            {% endblock %}
+    </main>
+    <br>
+    <footer class="text-muted">
+     <div class="container", align=center, style="background: darkblue;">
+         <ul>
+            <li style="color: white", align=center>Pino Suárez #449-A Colonia Centro CP 37000 León Guanajuato México</li>
+            <li style="color: white", align=center>447-234-5000; 445-109-8102; 477-372-8559</li>
+            <li style="color: white", align=center>smichelle.escobarl@gmail.com; moiseslopezperez@hotmail.com; gsebas.scamarillo@gmail.com</li>
+         </ul>
+      </div>
+  </body>
+</html>

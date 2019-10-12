@@ -1,17 +1,29 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Seguimiento proyecto Dextermex</title>
-  </head>
-  <body>
-    <h1>Rastreo</h1>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<br>
+<br>
+<br>  
+<br>
+<br>
+<br>
+<br>
+  <div class="container">
+    <h1></h1>
     <p>Introduzca el número de rastreo:</p>
         <form action="/rastrear/" method='POST'>
             {% csrf_token %}
             <label for="rastreo">No. Rastreo: </label><br>
-            <input id="rastreo" type="text" name="rastreo"><br>
-            <input type="submit" value="Rastrear">
+            <input id="rastreo" type="text" name="rastreo"><br><br>
+            <input type="submit" value="Rastrear"><br>
         </form>
-  </body>
-</html>
+  </div>
+  <br>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+{% endblock %}
 

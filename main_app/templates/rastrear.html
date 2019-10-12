@@ -1,17 +1,40 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Rastreo</title>
-  </head>
-  <body>
-    <h1>Resultados</h1>
-    <ul>
-        {{ proyecto.rastreo }}
-        {{ proyecto.empresa }}
-        {{ proyecto.proyecto }}
-        {{ proyecto.estatus }}
-        {{ proyecto.avance }}
-        {{ proyecto.entrega }}
-    </ul>
-  </body>
-</html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+  <br>
+  <br>
+  <br>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container", align=center>
+    <h1></h1>
+    <h2>Seguimiento a tu proyecto</h2><br>
+    <table class="table th td tr">
+        <tr class="tr">
+          <th class="th">RASTREO</th>
+          <th class="th">EMPRESA</th>
+          <th class="th">PROYECTO</th>
+          <th class="th">ESTATUS</th>
+          <th class="th">% AVANCE</th>
+          <th class="th">ENTREGA</th>
+        </tr>
+      
+        <tr class="tr">
+          <td class="td">{{ proyecto.rastreo }}</td>
+          <td class="td">{{ proyecto.empresa }}</td>
+          <td class="td">{{ proyecto.proyecto }}</td>
+          <td class="td">{{ proyecto.estatus }}</td>
+          <td class="td">{{ proyecto.avance }}</td>
+          <td class="td">{{ proyecto.entrega }}</td>
+        </tr>
+    </table>
+  </div>
+  <br>  
+  <br>
+  <br>
+  <br>
+  <br>
+
+{% endblock %}
